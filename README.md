@@ -2,8 +2,6 @@
 
 ![image](https://github.com/Alexfp05405/Assignment/assets/107488954/bf7aad0d-a572-438b-a97d-30a7a1008b5e)
 
-
-
 This is a catalog viewer app built with Vite, React, and TypeScript. It allows you to view a collection of catalog images and navigate through them using previous and next buttons or thumbnail images. You can also play or pause a slideshow of the catalog images.
 
 ## Features
@@ -12,6 +10,7 @@ This is a catalog viewer app built with Vite, React, and TypeScript. It allows y
 - Navigate through images using previous and next buttons
 - Click on thumbnail images to view specific images
 - Play or pause a slideshow of the catalog images
+- Responsive design for optimal viewing experience on different screen sizes and devices
 
 ## Installation
 
