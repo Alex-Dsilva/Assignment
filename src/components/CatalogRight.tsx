@@ -12,7 +12,7 @@ type RightProp ={
 
 const CatalogRight = (props:RightProp) => {
   return (
-    <Stack direction='column' spacing={'2rem'} sx={{ justifyContent: "space-between", height: "100%" }}>
+    <Stack direction='column' spacing={'2rem'} sx={{ justifyContent: "space-between", height: "100%" , width:{ md:"100%", xs:"80vw" }, marginX:"auto" }}>
             <Box sx={{ marginLeft: { xs: 0, md: '2rem' } }}>
               <Typography variant="h5" sx={{ textAlign: 'left', fontWeight: "600", color: "#a2a2a2e7" }}>
                 {CatalogData[props.currentIndex].title}

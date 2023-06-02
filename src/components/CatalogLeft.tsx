@@ -11,9 +11,9 @@ type LeftProp ={
 
 const CatalogLeft = (props:LeftProp) => {
   return (
-    <Box >
+    <Box sx={{ width:{ md:"100%", xs:"80vw" }, marginX:"auto" }} >
             <Box component="img" src={CatalogData[props.currentIndex].src} alt={`Image ${props.currentIndex + 1}`} sx={{ width: '98%', height: { xs: '40vh', md: '65vh', lg: '55vh' }, borderRadius: "50px"}} />
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: 2, gap:"2", width:"fit-content", marginX:"auto"}}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: 2, gap:{ xs:"1" , md:"2"}, width:"fit-content", marginX:"auto"}}>
               <IconButton disableFocusRipple disableRipple sx={{
                 '&:focus': {
                   outline: 'none',
@@ -21,13 +21,13 @@ const CatalogLeft = (props:LeftProp) => {
               }} onClick={props.Previous}>
                 <ArrowLeft fontSize="large" />
               </IconButton>
-              <Box sx={{ display: 'flex', justifyContent: 'center', gap: '0.5em' }}>
+              <Box sx={{ display: 'flex', justifyContent: 'center', gap:{ md:'0.5em', xs:"5px"}, alignItems:"center" }}>
                 {CatalogData.map((image, index) => (
                   <Box
                     component="img"
                     sx={{
                       height: { xs: '2em', sm: '3em', md: '4em', lg: '5em', xl:"7em" },
-                      width: { xs: '3.5em', sm: '5em', md: '6em', lg: '7em', xl:"12rem" },
+                      width: { xs: '2.5em', sm: '5em', md: '6em', lg: '7em', xl:"12rem" },
                       borderRadius: '10px',
                       filter: index === props.currentIndex ? 'none' : 'grayscale(100%)',
                     }}

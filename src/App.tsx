@@ -7,7 +7,7 @@ import { CatalogData } from './assets/Data';
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [isPlaying, setIsPlaying] = useState<boolean>(true);
 
   useEffect(() => {
     let interval: number;
@@ -50,7 +50,7 @@ function App() {
       <Grid item xs={12} md={7}>
         <CatalogLeft currentIndex={currentIndex} Previous={Previous} Next={Next} handleThumbnail={handleThumbnail}/>
       </Grid>
-      <Grid item xs={12} md={5} sx={{ position: 'relative' }} >
+      <Grid item xs={12} md={5}   >
         <CatalogRight currentIndex={currentIndex} isPlaying={isPlaying} handlePlayPause={handlePlayPause}  />
       </Grid>
     </Grid>
